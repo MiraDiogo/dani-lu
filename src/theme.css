@@ -1,0 +1,66 @@
+/* Design system variables for light and dark themes */
+:root {
+  --font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Shared values */
+  --color-primary: #dfff00;      /* Cyber Lime */
+  --color-primary-hover: #c4e000;
+  --color-secondary: #6366f1;    /* Space Indigo */
+  --color-secondary-hover: #4f46e5;
+  --color-accent: #f43f5e;       /* Hot Coral for warnings/heart rates */
+  --color-success: #10b981;
+  --color-info: #0ea5e9;
+  
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 9999px;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Theme (Default) */
+[data-theme="dark"] {
+  --bg-app: #0c0a0f;
+  --bg-card: #16131a;
+  --bg-input: #1e1a24;
+  --border-color: #262130;
+  --border-color-focus: #3d344d;
+  
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --text-on-primary: #0c0a0f;
+  --text-on-secondary: #ffffff;
+  
+  --glass-bg: rgba(22, 19, 26, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-glow: rgba(223, 255, 0, 0.15);
+  --glow-shadow: 0 0 20px rgba(223, 255, 0, 0.2);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg-app: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-input: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-color-focus: #cbd5e1;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-on-primary: #0f172a;
+  --text-on-secondary: #ffffff;
+  
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-glow: rgba(99, 102, 241, 0.08);
+  --glow-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+}
